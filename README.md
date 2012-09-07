@@ -11,7 +11,7 @@ a handy component that I thought it made sense to draw charts directly
 from a DataFrame.  So, as I need another chart, I'm going to add to this
 collection.
 
-EconoMetricks.charts.candlestick
+EconoMetrics.charts.candlestick
 --------------------------------
 
 This draws a candlestick chart.  It expects a Panda DataFrame with the
@@ -43,3 +43,20 @@ This draws smallish arrows at reation highs and reaction lows.  It expects
 a column in the DataFrame called HighLow, with the value "High" for a
 reaction high and "Low" for a reaction low.  The actual names can be overridden
 in the arguments.
+
+EconoMetrics.transformers.EMATransformer
+----------------------------------------
+
+Adds a column to a DataFrame that is the exponential moving average of the
+target column.
+
+EconoMetrics.transformers.MACDTransformer
+-----------------------------------------
+
+Adds columns for the MACD value, the Signal value and the Histogram to a
+DataFrame.
+
+EconoMetrics.transformers.HighLowTransformer
+--------------------------------------------
+
+Adds reaction highs and lows to a DataFrame.
